@@ -14,7 +14,7 @@ install: build
 	@cp bin/* ${GOPATH}/bin
 
 release: build
-	@aws s3 cp bin/cf-env-linux-amd64 s3://opsee-releases/go/cf/cf-linux-amd64
+	@aws s3 cp bin/cf-linux-amd64 s3://opsee-releases/go/cf/cf-linux-amd64
 
 clean:
 	@rm -f bin/*
